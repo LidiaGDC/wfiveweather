@@ -1,7 +1,11 @@
+import Weather from "./Weather";
+
 function App() {
   return (
     <div className="App">
       <h1>Hello world</h1>
+      <Weather />
+
       <footer>
         This was coded by Lidia Gallardo and is
         <a
