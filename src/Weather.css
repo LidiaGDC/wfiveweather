@@ -55,18 +55,19 @@
 .Weather .weather-data {
   font-size: 12px;
   text-align: left;
-  padding: 0px;
+  padding: 2px;
   line-height: 16px;
 }
 
 .Weather .date-info {
   text-align: right;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 10px;
   position: relative;
   top: -8px;
 }
 .Weather .right-title {
   color: #202124;
   font-size: 22px;
+  padding-bottom: 20px;
 }

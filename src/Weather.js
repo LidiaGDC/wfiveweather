@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
+import CorrectedDate from "./CorrectedDate";
 
 export default function Weather(props) {
   let [weatherData, setWeatherData] = useState({ ready: false });
@@ -11,7 +12,7 @@ export default function Weather(props) {
       temperature: Math.round(response.data.main.temp),
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
-      date: "Tuesday, 16:00h",
+      date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
     });
   }
@@ -54,8 +55,11 @@ export default function Weather(props) {
 
           <div className="col-6 date-info">
             <ul>
-              <li className="right-title">Weather</li>
-              <li className="weekday text-capitalize">{weatherData.date}</li>
+              <li className="right-title"> Weather </li>
+              <li className="weekday ">
+                {" "}
+                <CorrectedDate date={weatherData.date} />
+              </li>
               <li className="img-description text-capitalize">
                 {" "}
                 {weatherData.description}
