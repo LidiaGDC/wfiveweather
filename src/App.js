@@ -4,7 +4,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <Weather />
+      <Weather defaultCity="Madrid" />
 
       <footer>
         This was coded by Lidia Gallardo and is
