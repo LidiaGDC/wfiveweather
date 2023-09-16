@@ -1,5 +1,7 @@
 import React from "react";
 import CorrectedDate from "./CorrectedDate";
+import WeatherIcon from "./WeatherIcon";
+import "./Weather.css";
 
 export default function WeatherInfo(props) {
   return (
@@ -9,12 +11,12 @@ export default function WeatherInfo(props) {
         Results for <span className="city-picked"> {props.data.city} </span>
       </h1>
       <div className="row">
-        <div className="col-3 current-temp">
-          <img
-            className="icon-weather"
-            src={props.data.iconUrl}
-            alt="partly cloudy"
-          />
+        <div className="col-2 ">
+          <div className="float-left icon">
+            <WeatherIcon code={props.data.icon} />
+          </div>
+        </div>
+        <div className="col-2 current-temp">
           <span className="number">{props.data.temperature}</span>
           <span className="unit">°C</span>
         </div>
@@ -25,7 +27,7 @@ export default function WeatherInfo(props) {
           </ul>
         </div>
 
-        <div className="col-6 date-info">
+        <div className="col-5 date-info">
           <ul>
             <li className="right-title"> Weather </li>
             <li className="weekday ">

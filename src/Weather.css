@@ -28,21 +28,18 @@
   font-weight: bold;
 }
 
-.Weather .icon-weather {
+.Weather .icon {
   position: relative;
-  top: -9px;
+  left: 5px;
 }
-.Weather .current-temp {
-  text-align: right;
-  padding: 0px;
-}
-
 .Weather .number {
   color: #202124;
+  text-align: left;
   font-size: 40px;
   font-weight: 400;
   position: relative;
   top: -5px;
+  left: -30px;
 }
 
 .Weather .unit {
@@ -50,6 +47,7 @@
   font-size: 16px;
   position: relative;
   top: -21px;
+  left: -28px;
 }
 
 .Weather .weather-data {
