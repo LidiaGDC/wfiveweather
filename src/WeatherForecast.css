@@ -1,0 +1,16 @@
+.WeatherForecast {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.WeatherForecast .WeatherForecast-day {
+  padding-bottom: 5px;
+  color: black;
+}
+
+.WeatherForecast .WeatherForecast-tempmax {
+  margin-right: 3px;
+  color: black;
+}
